@@ -1,0 +1,81 @@
+<TaskerData sr="" dvi="1" tv="5.13.4">
+	<Profile sr="prof387" ve="2">
+		<cdate>1628280648316</cdate>
+		<clp>true</clp>
+		<edate>1628305666103</edate>
+		<flags>8</flags>
+		<id>387</id>
+		<mid0>384</mid0>
+		<nme>ACS - When Set Clip</nme>
+		<Event sr="con0" ve="2">
+			<code>3050</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3">%CLIP</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof388" ve="2">
+		<cdate>1628280855202</cdate>
+		<clp>true</clp>
+		<edate>1628284624710</edate>
+		<flags>8</flags>
+		<id>388</id>
+		<mid0>386</mid0>
+		<nme>ACS - Clip Mod</nme>
+		<Event sr="con0" ve="2">
+			<code>222</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3">Tasker/.adb_clip</Str>
+			<Str sr="arg1" ve="3">Modify</Str>
+		</Event>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1628107683756</cdate>
+		<name>ADB Clip Sync</name>
+		<pids>387,388</pids>
+		<psort>ActiveAlpha</psort>
+		<tids>386,384</tids>
+	</Project>
+	<Task sr="task384">
+		<cdate>1628107755448</cdate>
+		<edate>1628305570342</edate>
+		<id>384</id>
+		<nme>ACS - Write Clip</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Tasker/.clip</Str>
+			<Str sr="arg1" ve="3">%CLIP</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">service call clipboard 2 s16 "1"</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task386">
+		<cdate>1628107867103</cdate>
+		<edate>1628284624710</edate>
+		<id>386</id>
+		<nme>ACS - Read Clip</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>417</code>
+			<Str sr="arg0" ve="3">Tasker/.adb_clip</Str>
+			<Str sr="arg1" ve="3">%clip</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>105</code>
+			<Str sr="arg0" ve="3">%clip</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
