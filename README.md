@@ -14,7 +14,7 @@ Sincroniza a área de transferência do Android com o Linux
 
 ## Execução
 
-Antes conecte seu android com o seu computador em seguida instale o app em [releases](/releases)
+Antes conecte seu android com o seu computador em seguida instale o app em [releases](https://github.com/brunodavi/adb-clip-sync/releases)
 
     git clone https://github.com/brunodavi/adb-clip-sync.git
     cd ./adb-clip-sync
