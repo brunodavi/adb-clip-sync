@@ -1,4 +1,4 @@
-# ABD Clip Sync
+# ABD Clip Sync ![icon](icon.png)
 
 Sincroniza a área de transferência do Android com o Linux
 
@@ -14,13 +14,13 @@ Sincroniza a área de transferência do Android com o Linux
 
 ## Execução
 
-Antes conecte seu android com o seu computador em seguida instale o [adb-clip-sync.apk](#)
+Antes conecte seu android com o seu computador em seguida instale o app em releses
 
     git clone https://github.com/brunodavi/adb-clip-sync.git
     cd ./adb-clip-sync
 
     # Inicia monitoramento da clipboard
-    ./clipsync.py
+    ./main.py
 
 ## Execução por tcpip
 
