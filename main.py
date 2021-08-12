@@ -4,7 +4,7 @@ from pyperclip import copy, paste
 from subprocess import getoutput as rsh
 from print_colors import error, correct, log
 
-LOCAL = '/sdcard/Tasker'
+LOCAL = '/sdcard/Android/data/com.adb.clip.sync'
 
 def main():
 	correct(' Iniciando a sincronização...')
