@@ -2,8 +2,6 @@
 
 Sincroniza a área de transferência do Android com o Linux
 
-[Demonstração](https://youtu.be/AT1T1vVTaRY)
-
 ## Dependências
 
 ### `Linux`
